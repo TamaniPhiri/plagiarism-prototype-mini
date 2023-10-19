@@ -15,8 +15,8 @@ def visualize_differences(text1, text2):
 def main():
     st.title("Plagiarism Checker")
 
-    uploaded_file_1 = st.file_uploader("Upload the first document (TXT, DOC, PDF)", type=["txt", "doc", "pdf"])
-    uploaded_file_2 = st.file_uploader("Upload the second document (TXT, DOC, PDF)", type=["txt", "doc", "pdf"])
+    uploaded_file_1 = st.file_uploader("Upload the first document (TXT, DOC, PDF)", type=["txt", "doc", "pdf","docx"])
+    uploaded_file_2 = st.file_uploader("Upload the second document (TXT, DOC, PDF)", type=["txt", "doc", "pdf","docx"])
 
     if uploaded_file_1 is not None and uploaded_file_2 is not None:
         # Read the contents of both uploaded documents
